@@ -1,0 +1,330 @@
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobScript Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">RobScript Creator</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">الرئيسية</a></li>
+                    <li><a href="#" class="hover:underline">الميزات</a></li>
+                    <li><a href="#" class="hover:underline">التسعير</a></li>
+                    <li><a href="#" class="hover:underline">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">وصف تطبيق "RobScript Creator" لتوليد برمجة الروبوتات</h2>
+            <p class="mb-4">RobScript Creator هو تطبيق مبتكر تم تصميمه لتقديم الحل الأمثل للمهندسين والمطورين في مجال الروبوتات، حيث يتيح لهم توليد أسكربتات برمجة متقدمة للروبوتات من خلال إدخال أوصاف طبيعية. يقدم التطبيق إمكانيات واسعة تتجاوز مجرد توليد الأكواد، ليدمج بين تقنيات الذكاء الاصطناعي، تحليل اللغة الطبيعية، التصميم الثلاثي الأبعاد، وحسابات التكلفة المادية لبناء الروبوتات.</p>
+        </section>
+
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">ميزات التطبيق الرئيسية</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li>
+                    <strong>توليد أسكربتات البرمجة المتقدمة:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>باستخدام نماذج توليد النصوص الذكية مثل OpenAI GPT وHugging Face Transformers، يقوم التطبيق بتحويل أوصاف المستخدم إلى أكواد برمجة كاملة بلغات متعددة مثل Python، JavaScript، C++، وJava.</li>
+                        <li>دعم توليد الأسكربتات للعديد من منصات الروبوتات مثل Arduino، Raspberry Pi، وROS (نظام التشغيل الروبوتي).</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>واجهة تفاعلية ومحادثة ذكية:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>واجهة مستخدم تفاعلية بحيث يتواصل المستخدم مع التطبيق في محادثة طبيعية لطلب الأسكربتات ومراجعتها.</li>
+                        <li>دعم لغات متعددة، بما في ذلك العربية والإنجليزية، مع إمكانية إضافة لغات أخرى مستقبلًا.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>تصميم وتصور ثلاثي الأبعاد:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>دمج أدوات Three.js وBlender لتوفير رسومات ثلاثية الأبعاد واقعية للروبوتات وتصور شكله الخارجي والداخلي.</li>
+                        <li>عرض نماذج ثلاثية الأبعاد تفاعلية بحيث يمكن للمستخدم تعديل الأجزاء والتفاصيل لتخصيص الروبوت بما يتناسب مع احتياجاته.</li>
+                        <li>إضافة خاصية الواقع المعزز (AR) لتمكين المستخدم من رؤية الروبوت في بيئة حقيقية عبر كاميرا الهاتف.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>حساب تكلفة بناء الروبوت:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>باستخدام APIs لإدخال بيانات الأسعار المحلية لمكونات الروبوت، يقوم التطبيق بحساب متوسط التكلفة الإجمالية لبناء الروبوت بما في ذلك الأجزاء الإلكترونية، المواد الخام، البطاريات، والدوائر الكهربائية.</li>
+                        <li>توفير قائمة بالمواد المطلوبة لكل جزء من أجزاء الروبوت مع الروابط إلى المتاجر المحلية أو العالمية للشراء.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>إمكانية تكامل مع أدوات المحاكاة الحقيقية:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>توفير دعم لاختبار الأسكربتات على محاكيات مثل PyBullet وGazebo لمراجعة أداء الروبوت واختبار الحركات قبل التنفيذ الفعلي.</li>
+                        <li>دعم تنفيذ الأكواد على أجهزة روبوت فعلية مثل Arduino وRaspberry Pi لتمكين التجربة العملية.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>الذكاء الاصطناعي التكيفي والتعلم الآلي:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>استخدام نماذج التعلم الآلي لتحليل أوصاف المستخدم وتقديم اقتراحات ذكية تعتمد على تفاعلات سابقة.</li>
+                        <li>دمج ميزة التعلم من تفاعلات المستخدم لتقديم توصيات أكثر دقة وتحسين الأسكربتات بناءً على تاريخ الاستخدام.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>دعم أدوات التصميم المتقدم:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>إدراج أدوات مثل Fusion 360 أو SolidWorks لتمكين المستخدمين من تصميم الأجزاء الميكانيكية وضمان توافقها مع الأكواد البرمجية.</li>
+                        <li>إضافة خاصية لتوليد خطوط الإنتاج، مما يساعد المستخدم في التخطيط لعملية التصنيع.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>مشاركة المشاريع والتعاون بين المطورين:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>دعم التعاون بين الفرق باستخدام Git integration لمشاركة الأكواد ومراجعتها بشكل جماعي.</li>
+                        <li>إضافة إمكانية مشاركة المشاريع مع المجتمع أو الفريق عبر روابط خاصة أو منصات مدمجة داخل التطبيق.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>التفاعل الصوتي المتقدم باستخدام الذكاء الاصطناعي:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>إضافة دعم متقدم للتعرف على الصوت والتفاعل باستخدام نماذج NLP لتفسير أوامر المستخدم بدقة.</li>
+                        <li>استخدام مكتبات NLP متقدمة مثل spaCy وTransformers لدعم الفهم العميق للأوامر وتعليمات الروبوت.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>اختبارات أداء الروبوت وتقديم تقارير تحليلية:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>توفير أدوات لاختبار أداء الروبوت بعد تنفيذ الأكواد، مثل اختبارات الحركة والسرعة.</li>
+                        <li>تقديم تقارير تحليلية تساعد المستخدمين على فهم أداء الروبوت وكيفية تحسينه لتحقيق الكفاءة القصوى.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>التكامل مع منصات السحابة والتخزين:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>استخدام خدمات مثل Google Cloud أو AWS لتخزين المشاريع والبيانات بشكل آمن وداعم للتعاون.</li>
+                        <li>تضمين خاصية التخزين السحابي لتمكين المستخدم من الوصول إلى مشاريعه من أي جهاز.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>تقديم محتوى تعليمي ودورات تدريبية:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>إضافة دورات تعليمية وتدريبية داخل التطبيق لمساعدة المستخدمين في التعرف على كيفية استخدام التطبيق وتطبيق الأسكربتات.</li>
+                        <li>تضمين أمثلة تطبيقية ومشاريع سابقة يمكن الاطلاع عليها وتعديلها.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>تحسين التفاعل مع الواقع المعزز (AR):</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>إضافة إمكانية عرض الروبوت في بيئة حقيقية باستخدام كاميرا الهاتف أو جهاز الواقع المعزز.</li>
+                        <li>السماح للمستخدمين بتعديل نماذج الروبوت بشكل تفاعلي واختبار تفاعله مع العناصر المحيطة به.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">الخلاصة</h3>
+            <p>RobScript Creator هو التطبيق المثالي للمهندسين والمطورين الذين يرغبون في الانتقال من فكرة إلى منتج فعلي بسرعة ودقة. بفضل دمج تقنيات الذكاء الاصطناعي، واجهات تفاعلية، وتصميمات ثلاثية الأبعاد، يصبح هذا التطبيق الأداة المتكاملة لتوليد وبرمجة الروبوتات بحيث تشغلها وتصورها بشكل واقعي.</p>
+        </section>
+
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">الدردشة مع RobScript Creator</h3>
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="flex flex-col space-y-4 h-96 overflow-y-auto" id="chat-box">
+                    <!-- Example chat messages -->
+                    <div class="flex justify-start">
+                        <div class="bg-gray-200 p-2 rounded-lg max-w-xs">
+                            <p>مرحبًا! كيف يمكنني مساعدتك اليوم؟</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="bg-blue-600 text-white p-2 rounded-lg max-w-xs">
+                            <p>أريد توليد أسكربت لروبوت Arduino.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-start">
+                        <div class="bg-gray-200 p-2 rounded-lg max-w-xs">
+                            <p>رائع! من فضلك قدم لي وصفًا للروبوت الذي تريد برمجته.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 flex">
+                    <input type="text" id="user-input" class="flex-grow p-2 border rounded-l-lg" placeholder="اكتب رسالتك هنا...">
+                    <button class="bg-blue-600 text-white p-2 rounded-r-lg" onclick="sendMessage()">إرسال</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold mb-4">تصور ثلاثي الأبعاد للروبوت</h3>
+            <div id="3d-viewer" class="bg-white rounded-lg shadow-lg p-4 h-96"></div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 RobScript Creator. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        // إعداد مفتاح API لـ OpenAI (تأكد من إدخال مفتاح API الخاص بك)
+        const openaiApiKey = 'YOUR_OPENAI_API_KEY';
+
+        // قاعدة بيانات الأوصاف المتوقعة لتدريب التطبيق (200 وصف باللغة العربية و200 وصف باللغة الإنجليزية)
+        const arabic_descriptions = [
+            "روبوت منزلي للقيام بالأعمال المنزلية مثل التنظيف والطهي.",
+            "روبوت بناء للمساعدة في إنشاء المباني.",
+            "روبوت تنظيف للقيام بتنظيف الأرضيات والنوافذ.",
+            "روبوت لحمل البضائع ونقلها داخل المستودعات.",
+            "روبوت يعمل في مصنع الغزل والنسيج لتشغيل الآلات.",
+            "روبوت في مصنع السيارات لتركيب الأجزاء.",
+            "روبوت يعمل في مصنع الدراجات النارية للإنتاج والتجميع.",
+            "روبوت في مصنع الأخشاب لقطع وتشكيل الأخشاب.",
+            "روبوت للزراعة وتشغيل الآلات الزراعية.",
+            // أضف المزيد من الأوصاف هنا...
+        ];
+
+        const english_descriptions = [
+            "Home robot for performing household tasks like cleaning and cooking.",
+            "Construction robot to assist in building structures.",
+            "Cleaning robot for cleaning floors and windows.",
+            "Robot for carrying goods and transporting them within warehouses.",
+            "Robot working in a textile factory to operate machinery.",
+            "Robot in an automotive factory for assembling parts.",
+            "Robot working in a motorcycle factory for production and assembly.",
+            "Robot in a lumber factory for cutting and shaping wood.",
+            "Agricultural robot for operating farming machinery.",
+            // Add more descriptions here...
+        ];
+
+        // قاعدة بيانات الأسكربتات المحتملة لإنشاء روبوتات متنوعة (200 روبوت مهاري واحترافي)
+        const robot_scripts = {
+            "home_robot": `# Python script for a home robot
+import time
+
+class HomeRobot:
+    def __init__(self):
+        pass
+
+    def perform_task(self, task):
+        print(f"Performing task: {task}")
+        # Simulate task performance
+        time.sleep(2)
+        print(f"Task '{task}' completed!")
+
+robot = HomeRobot()
+while True:
+    robot.perform_task("Cleaning the floor")
+    time.sleep(10)`,
+            
+            "construction_robot": `# Python script for a construction robot
+import time
+
+class ConstructionRobot:
+    def __init__(self):
+        pass
+
+    def build_structure(self, structure_type):
+        print(f"Building structure: {structure_type}")
+        # Simulate building process
+        time.sleep(5)
+        print(f"Structure '{structure_type}' completed!")
+
+robot = ConstructionRobot()
+while True:
+    robot.build_structure("House Foundation")
+    time.sleep(15)`,
+            
+            // أضف المزيد من الأسكربتات هنا...
+        };
+
+        // قاعدة بيانات الخامات المطلوبة لبناء كل روبوت
+        const robot_materials = {
+            "home_robot": ["Sensors", "Microcontroller", "Battery", "Cables", "Chassis"],
+            "construction_robot": ["Heavy-duty Motors", "Hydraulic System", "Frame", "Sensors", "Battery Pack"],
+            "cleaning_robot": ["Motors", "Brushes", "Vacuum System", "Battery", "Chassis"],
+            "cargo_robot": ["Wheels", "Motor", "GPS Module", "Battery Pack", "Cargo Hold"],
+            "textile_factory_robot": ["Weaving Loom", "Sensors", "Controller", "Battery Pack", "Frame"],
+            "automotive_factory_robot": ["Engine Parts", "Robotic Arm", "Sensors", "Power Supply", "Chassis"],
+            "lumber_factory_robot": ["Chainsaw", "Conveyor Belt", "Sensors", "Frame", "Power Supply"],
+            "agricultural_robot": ["Tractor Engine", "GPS Module", "Plow", "Sensors", "Battery"],
+            // أضف المزيد من الخامات هنا...
+        };
+
+        // دالة لتوليد صورة مقترحة للروبوت باستخدام OpenAI (DALL·E)
+        async function generateProposedImages(description) {
+            const response = await fetch('https://api.openai.com/v1/images/generations', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${openaiApiKey}`
+                },
+                body: JSON.stringify({
+                    prompt: description,
+                    n: 1,  // عدد الصور المقترحة
+                    size: "256x256"  // حجم الصورة
+                })
+            });
+            const data = await response.json();
+            const imageUrls = data.data.map(image => image.url);
+            return imageUrls;
+        }
+
+        // دالة لتوليد النص الصوتي للروبوت باستخدام gTTS
+        function generateSpeech(text, lang='ar') {
+            const tts = new gTTS(text, lang, false);
+            tts.save(`${text.slice(0, 10)}.mp3`);  // حفظ الملف باسم قصير
+            console.log(`Audio file '${text.slice(0, 10)}.mp3' has been generated.`);
+        }
+
+        // دالة لتوليد الأوصاف المتوقعة
+        function generateDescriptions() {
+            return [...arabic_descriptions, ...english_descriptions];
+        }
+
+        // دالة لتدريب التطبيق على توليد الأسكربتات
+        function trainApp() {
+            const descriptions = generateDescriptions();
+            descriptions.forEach(desc => {
+                console.log(`Generated script for description: ${desc}`);
+                // قم بتوليد الأسكربتات باستخدام قاعدة البيانات
+                Object.keys(robot_scripts).forEach(robot_type => {
+                    const script = robot_scripts[robot_type] || "No script available";
+                    const materials = robot_materials[robot_type] || [];
+                    const images = generateProposedImages(desc);
+                    console.log("Generated script:");
+                    console.log(script);
+                    console.log("\nRequired materials:");
+                    console.log(materials.join(", "));
+                    console.log("\nProposed images:");
+                    images.forEach((image_url, i) => {
+                        console.log(`Image ${i + 1}: ${image_url}`);
+                    });
+                    console.log("\n");
+                });
+            });
+        }
+
+        async function sendMessage() {
+            const userInput = document.getElementById('user-input');
+            const chatBox = document.getElementById('chat-box');
+
+            if (userInput.value.trim() !== '') {
+                const userMessage = document.createElement('div');
+                userMessage.classList.add('flex', 'justify-end');
+                userMessage.innerHTML = `<div class="bg-blue-600 text-white p-2 rounded-lg max-w-xs"><p>${userInput.value}</p></div>`;
+                chatBox.appendChild(userMessage);
+
+                // Simulate a response from
